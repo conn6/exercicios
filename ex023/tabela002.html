@@ -16,46 +16,86 @@
 
         table {
             background-color: rgb(56, 56, 56);
-            width: 500px;
+            max-width: 50vw;
+            width: 60vw;
             border-collapse: collapse;
+            border-radius: 2rem;
+            position: relative;
         }
 
-        td, th {
-            border: 0.1rem solid #defbf2;
+        td {
             padding: 10px;
+        }
+
+        tbody, thead, tfoot {
+            border-radius: 2rem;
         }
 
         td.num {
             text-align: right;
         }
+
+        .with-border {
+            border: 0.1rem solid #defbf2;
+        }
+
+        caption {
+            color: #11211c;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: #10674b;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: #11211c;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #11211c;
+            border-radius: 20px;
+        }        
     </style>
 </head>
 <body>
     <table>
+        <caption>Quantidade de Alunos da Rede Pública Municipal e Estadual de Ensino - 2021</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Município</th>
+                <th class="with-border" scope="col">Alunos da Rede Municipal</th>
+                <th class="with-border" scope="col">Alunos da Rede Estadual</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td class="num">45 919 400</td>
+                <th class="with-border" scope="row">Sapé</th>
+                <td class="with-border">7.368</td>
+                <td class="with-border">3.123</td>
             </tr>
             <tr>
-                <td>Brasília</td>
-                <td class="num">45 300 340</td>
+                <th class="with-border" scope="row">Cruz do Espírito Santo</th>
+                <td class="with-border">3.370</td>
+                <td class="with-border">1.796</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Toral de Habitantes</th>
-                <td class="num"></td>
+                <th scope="row">Total</th>
+                <td class="with-border">10.738</td>
+                <td class="with-border">4.919</td>
+                <td rowspan="4">15.657</td>
             </tr>
         </tfoot>
-        <caption>Quantidade de Habitantes</caption>
     </table>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, minus, et temporibus amet non pariatur alias vel porro impedit ducimus iste repellendus quas mollitia rerum nobis quisquam eum earum distinctio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus enim ea quidem quam blanditiis, ducimus iure iste veritatis perspiciatis eveniet error dolorem quae ut est aut? Nobis illo ipsa repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta ad, omnis harum quibusdam deleniti rem recusandae. Sapiente adipisci voluptatum nostrum? Porro iure, debitis ab maxime ea quae et ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, tempore atque! Sint quaerat cumque totam impedit molestiae minus eum ad! Quos animi odio amet et ea error ut, sint nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugit aut quis deserunt laudantium, aliquid atque officiis! Maxime ipsam, molestiae, consequatur libero a labore voluptatibus fugit enim soluta exercitationem quam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum veniam cum quibusdam fuga perspiciatis deserunt soluta. Illum sunt ipsa, laboriosam libero maxime fugit! Voluptatum eum quas voluptates repellat molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, temporibus assumenda ex ducimus nihil cum quos! Mollitia voluptates dolor minus, facere, tenetur maxime voluptatem fugit illo necessitatibus omnis maiores porro?
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, qui tenetur deserunt praesentium quidem fugit earum tempore nemo obcaecati, eius quaerat animi necessitatibus dolore delectus deleniti quo ducimus. At, nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, ut dolorem deserunt voluptas suscipit incidunt a? Aliquid illo iste delectus ad cupiditate assumenda laboriosam eius recusandae eum eligendi. Officia, omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maiores ducimus nam cum totam officia voluptatibus quae corporis quis hic sapiente numquam iusto a quia, dolor esse itaque nostrum commodi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eius incidunt illum fuga sed? Expedita, repudiandae culpa, laudantium dolor ducimus tempore quibusdam laborum fugiat, consequuntur tempora blanditiis veniam totam praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea cumque expedita fugit, dolores, excepturi modi incidunt commodi accusantium aperiam similique! Ipsum, aliquid nesciunt eveniet a necessitatibus omnis commodi tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquid eveniet suscipit omnis eum, voluptate voluptas nobis cumque quia quibusdam ut hic. Cumque repudiandae saepe quae, rem aliquam architecto tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quae minus ut, nisi vel debitis odit repudiandae recusandae, ea, quasi velit! Dolore odio eveniet dolorem omnis quis temporibus ipsam. Minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore ab eos iste voluptates laudantium rem quas asperiores est commodi numquam quidem amet excepturi magnam reiciendis voluptatem, beatae repudiandae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam culpa aut? Officia nihil ducimus culpa quam odio, mollitia asperiores at ut debitis similique! Beatae maiores quaerat nemo rerum consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit veniam, impedit aut distinctio harum cupiditate consequatur voluptatibus voluptatum? Nulla neque placeat cupiditate consequatur possimus dolore rerum autem, alias amet quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum corporis accusamus recusandae veniam nihil pariatur quas, nulla blanditiis vero eveniet a, distinctio quibusdam, ratione velit nemo necessitatibus ex quia.</p>
 </body>
 </html>
